@@ -1,0 +1,93 @@
+/* tablet responsibe
+===================================================== */
+ @media only screen  and (max-width:991px) {
+    #banner-img {width: 50%;}
+    #banner-dosc {width: 50%;}
+    .banner-dosc h1 {font-size: 56px;}
+    .service-dosc {width: 170px;}
+    .singel-fbox {max-width: 170px;width: 100%;}
+    .nav-bar ul li {padding: 0px 4px;}
+ }
+ /* mobile layout
+ ======================================================== */
+ @media only screen and (min-width:200px) and (max-width:480px) {
+   .mini-manu {
+      max-width: 100%;
+      width: 100%;
+      padding: 10px 0px;
+   }
+   .mini-manu ul{
+     text-align: center;
+     
+   }
+   .search-area {
+      max-width: 250px;
+      width: 100%;
+      margin: 0 auto;
+      float: none;
+   }
+   .search-area form {
+      margin-bottom: 15px;
+   }
+   .header-area-logo {
+      max-width: 960px;
+      width: 100%;
+   }
+   .header-area-social-icons {
+      max-width: 960px;
+      width: 100%;
+   }
+   .header-area-social-icons ul {
+      text-align: center;
+   }
+   #banner-img {
+      width: 100%;
+   }
+   #banner-dosc {
+      width: 100%;
+   }
+   .service-dosc {
+      width: 210px;
+      float: left;
+      margin-left: 25px;
+   }
+   .work-area-singelbox-width {
+      width: 100%;
+   }
+   .singel-fbox {
+      max-width: 960px;
+      width: 100%;
+   }
+   .footer-input-area input {
+      padding: 17px 245px;
+      padding-left: 3px;
+   }
+   .footer-input-area textarea {
+      width: 97%;
+      margin-left: 5px;
+      padding-left: 4px;
+      max-width: 960px;
+   }
+   .footer-subbtn {
+      width: 80px;
+      margin: 0px auto;
+      padding: 10px 0px !important;
+   }
+   .copy-right-child1 {
+      width: 100%;
+      text-align: center;
+
+   }
+   .copy-right-child2 {
+      width: 100%;
+      text-align: center;
+   }
+   .copy-right-child1, .copy-right-child2 p {
+      padding: 4px 0px;
+   }
+   #drop-dowan {
+      display: none;
+   }
+  
+
+ }

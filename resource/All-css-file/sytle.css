@@ -1,0 +1,556 @@
+/* common code start from here
+======================================================= */
+*{
+   padding: 0;
+   margin: 0;
+}
+body{
+    box-sizing: border-box;
+    font-family: Georgia,sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    margin: 0;
+}
+.container{
+   max-width: 960px;
+   width: 96%;
+   margin: 0 auto;
+   
+}
+img{
+   width: 100%;
+   height: auto;
+}
+body a{
+   text-decoration: none;
+}
+body ul li{
+   list-style: none;
+}
+
+.container::after{
+   content: "";
+   display: table;
+   clear: both;
+}
+/* common code ends from here
+======================================================= */
+
+
+/* top header section design start from here
+======================================================= */
+#top-header{
+  background-color: #E83F3A;
+ 
+}
+.mini-manu{
+  max-width: 70%;
+  width: 100%;
+  float: left;
+  padding: 20px 0px;
+}
+.mini-manu ul{
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+.mini-manu ul li{
+  display: inline-block;
+  padding-right: 12px;
+  position: relative;
+}
+.mini-manu ul li::after{
+   position: absolute;
+   content: "";
+   top: 8px;
+   right: 4px;
+   width: 1px;
+   height: 12px;
+   background-color: #fff;
+}
+.mini-manu ul li:last-child::after{
+    display: none;
+}
+
+.mini-manu ul li a{
+  color: #fff;
+  font-size: 14px;
+}
+
+.search-area{
+  max-width: 30%;
+  width: 100%;
+  float: right;
+  margin-top: 16px;
+}
+.search-area form{
+  max-width: 210px;
+  width: 96%;
+  padding: 2%;
+  float: right;
+  background-color: #fff;
+  border-radius: 25px;
+}
+.search-area input{
+  float: left;
+  width: 87%;
+  padding:1px;
+  color: #000;
+  border: 0px solid;
+}
+.search-area input[type="submit"]{
+  float: right;
+  width: 11%;
+  background-color: #fff;
+  background-image: url(../images/slogo.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  cursor: pointer;
+}
+/* top header area design ends from here
+======================================================= */
+
+/* main header area design start from here
+======================================================= */
+.header-area-logo{
+  max-width:230px;
+  width:100%;
+  float: left;
+}
+.header-area-social-icons{
+  max-width: 250px;
+  width: 100%;
+  float: right;
+  margin-top: 20px;
+}
+.header-area-social-icons ul{
+  text-align: right;
+  padding: 0px;
+  margin: 0px;
+}
+.header-area-social-icons ul li{
+  display: inline-block;
+  padding-left: 8px;
+  background-color: #333333;
+  border-radius: 50%;
+  padding: 8px;
+  width: 25px;
+  height:23px;
+  text-align: center;
+  transition: 0.3s;
+}
+.header-area-social-icons ul li i{
+  color: #fff;
+  cursor: pointer;
+  font-size: 22px;
+}
+.header-area-social-icons ul li:hover{
+   background-color: #ee802f;
+}
+.header-area-social-icons ul li:hover:first-child{
+   background-color: #0678B6;
+}
+.header-area-social-icons ul li:hover:nth-child(2){
+   background-color:#37B1E2;
+}
+.header-area-social-icons ul li:hover:nth-child(3){
+   background-color: #E93F3C;
+}
+.header-area-social-icons ul li:hover:nth-child(4){
+   background-color:#E83F3A;
+}
+.inner-header{
+   padding-top: 50px;
+   padding-bottom: 40px;
+}
+/* main header area design ends from here
+======================================================= */
+
+/* drop dowan manu design ends from here
+======================================================= */
+.nav-bar{
+   background-color: #333333;
+   border-radius: 5px;
+   width: 100%;
+   margin-bottom: 25px;
+   position: relative;
+   z-index: 1;
+}
+.nav-bar::after{
+   position: absolute;
+   content: "";
+   background-color: #2b2b2b;
+   height: 50%;
+   width: 100%;
+   padding: 0px;
+   margin: 0px;
+   top: 50%;
+   border-radius: 3px;
+   z-index: -1;
+}
+
+.nav-bar ul{
+   padding: 15px 0px;
+   margin: 0px;
+   text-align: center;
+
+}
+.nav-bar ul li{
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+    padding: 0px 12px;
+    position: relative;
+
+}
+.nav-bar ul li:hover a{
+   color: #E83F3A;
+}
+.nav-bar ul li a{
+   padding: 0px;
+   margin: 0px;
+   font-size: 14px;
+   color: #fff;
+   transition: 0.3s;
+}
+/* drop dowan design start from here */
+ /* ======================================= */
+.sub-manu1{
+   background-color:#E83F3A;
+   width: 120px;
+   border-radius: 3px;
+   position: absolute;
+   top:25px;
+   display: none;
+   padding: 0px;
+   margin: 0px;
+
+}
+.sub-manu1 ul{
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+.sub-manu1 ul li{
+    display: inline-block;
+    
+}
+.sub-manu1 ul li:hover{
+   background-color: #333333;
+   border-radius: 3px;
+}
+.sub-manu1 ul li a{
+    color: #fff !important;
+    padding: 0px;
+    margin: 0px;
+}
+.nav-bar ul li:hover .sub-manu1{
+   display: block;
+}
+ 
+.sub-manu2{
+   padding: 0px;
+   margin: 0px;
+   position: absolute;
+   top: 0px;
+   left: 118px;
+   background: #E83F3A;
+   display: none;
+}
+.sub-manu1 ul li:hover .sub-manu2{
+   display: block;
+}
+ /* ======================================= */
+/* drop dowan design ends from here */
+
+ /* ======================================= */
+/* drop dowan manu design ends from here
+======================================================= */
+/* salider section start from here */
+
+ /* ======================================= */
+.item{
+   position: relative;
+}
+.slider-caption{
+   position: absolute;
+   width: 100%;
+   text-align: center;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+.slider-caption h1{
+    color: #ddd;
+    font-size: 50px;
+}
+ /* ======================================= */
+ /* salider section start from here */
+ /* banner section design from here */
+  /* ======================================= */
+ #banner-img {
+   width: 440px;
+   float: left;
+   padding: 0px;
+   margin: 0px;
+ }
+ #banner-dosc {
+   width: 520px;
+   float: right;
+   margin: 0px;
+   padding: 0px;
+ }
+ .banner-dosc {
+   padding-left: 50px;
+   padding-top: 100px;
+ }
+ .banner-dosc h1 {
+   color: #000;
+   font-size: 79px;
+   line-height: 1.3em;
+   font-weight: normal;
+ }
+ .banner-dosc p {
+   color: #666666;
+   font-size: 17px;
+   font-weight: normal;
+ }
+ .banner-dosc a {
+   text-decoration: none;
+   font-size: 16px;
+   float: right;
+   color: #ba2e1f;
+   margin-top: 22px;
+   transition: 0.3s;
+ }
+ .banner-dosc a:hover {
+   color: #000;
+ }
+  /* ======================================= */
+ /* banner section ends from here */
+ /* work section start from here */
+ /* ======================================= */
+ .work-area-singelbox-width{
+   width: 32%;
+   float: left;
+   margin: 0% 1%;
+ }
+ .work-area{
+    background-color: #f2f2f2;
+ }
+ .service-area{
+    margin-left: 0px;
+ }
+ .testimonia-area{
+   margin-right: 0px;
+ }
+ .work-area h2 {
+   font-size: 26px;
+   color: #333333;
+   font-weight: normal;
+   margin: 50px 0px;
+ }
+ .about-are{
+    box-sizing: border-box;
+
+ }
+ .about-area img{
+    width: 95%;
+    padding: 2px;
+    border: 1px solid #444;
+    margin-bottom: 20px;
+ }
+ .about-area p{
+    font-size: 13px;
+    color: #878787;
+    font-weight: normal;
+    margin-bottom: 30px;
+ }
+ 
+ .about-area a{
+   font-size:13px;
+   color: #E83F3A;
+   float: right;
+ }
+ .seavice-img img{
+    width: 65px;
+    float: left;
+
+ }
+ .service-dosc{
+    width: 210px;
+    float: right;
+ }
+ .child-service-area{
+    padding-bottom: 30px;
+ }
+ .service-dosc h3{
+    font-size: 14px;
+    color: #878787;
+ }
+ .service-dosc p{
+    font-size: 12px;
+    color: #878787;
+    text-transform: capitalize;
+ }
+ .child-service-area{
+     padding-bottom: 106px;
+ }
+ .service-area a{
+   color: #E83F3A;
+   font-size: 16px;
+   float: right;
+   padding-bottom: 30px;
+ }
+.child-testimonia-area-header{
+   overflow: hidden;
+}
+.testimania-header-icon{
+   width: 50px;
+   float: left;
+}
+.testimania-header-dosc{
+   width: 250px;
+   float: right;
+   text-align: left;
+   margin-top: 5px;
+}
+.testimania-header-dosc h3{
+ color: #989898;
+}
+.child-testimonia-area-dosc p{
+   color: #989898;
+   font-size: 13px;
+
+}
+.child-testimonia-area a{
+   color: #E83F3A;
+   font-size: 16px;
+   float: right;
+}
+.child-testimonia-area{
+    padding-bottom: 45px;
+}
+/* ======================================= */
+/* work section ends from here */
+/* footer section design start from here */
+.inner-fooer{
+   overflow: hidden;
+}
+.singel-fbox{
+   max-width: 216px;
+   width: 100%;
+   float: left;
+   margin-right: 32px;
+   margin-top: 30px;
+}
+.singel-fbox:last-child{
+   margin-right:0px;
+}
+.singel-fbox h3{
+   color: #666666;
+   font-size: 16px;
+   padding-top: 20px;
+   border-top: 1px solid #666666;
+   margin-right:15px;
+}
+.latest-twests p{
+   color: #666666;
+   font-size: 14px;
+   line-height: 1.5rem;
+   margin-top: 35px;
+}
+.latest-twests a{
+   color: #E83F3A;
+}
+.q-links ul{
+   margin-top: 35px;
+}
+.q-links ul li{
+   padding: 5px 0px;
+   border-bottom: 1px solid #666666;
+}
+.q-links ul li a{
+   color: #666666;
+   font-size: 14px;
+}
+.q-links ul li a i{
+   color: #666666;
+   margin-right: 5px;
+}
+.singel-box-child h4{
+   font-size: 14px;
+   color: #666666;
+   font-family: normal;
+   margin-top: 38px;
+}
+#addmin-text-color{
+   color: #b82c1f;
+   font-size: 12px;
+
+}
+
+.singel-box-child p{
+   font-size: 12px;
+   color: #666666;
+   line-height: 15px;
+}
+.singel-box-child-dosc{
+   margin: 20px 0px;
+}
+.singel-box-child a{
+  color: #b82c1f;
+  font-size: 16px;
+  float: right;
+  padding-bottom: 20px;
+}
+.footer-input-area form{
+    overflow: hidden;
+    margin-top: 25px;
+}
+.footer-input-area input{
+   border: none;
+   padding: 7px 65px;
+   padding-left: 3px;
+   background: #f2f2f2;
+   margin: 15px 0px;
+   margin-left: 5px;
+   border-radius: 5px;
+   text-transform: capitalize;
+}
+.footer-input-area textarea{
+   border: none;
+   background-color:#f2f2f2;
+   width: 210px;
+   height: 85px;
+   margin-left: 5px;
+   border-radius: 5px;
+   padding-left: 4px;
+}
+.footer-subbtn{
+   width: 75px;
+   padding-left: 15px !important;
+   cursor: pointer;
+   color: #ba2e1f;
+   font-size: 14px;
+   text-transform: uppercase !important;
+}
+#copy-right{
+   background-color:#f2f2f2;
+}
+.copy-right-child1{
+   width: 50%;
+   float: left;
+   text-align: left;
+}
+.copy-right-child2{
+   width: 50%;
+   float: right;
+   text-align: right;
+}
+.copy-right-child1 , .copy-right-child2 p{
+   font-size: 14px;
+   color: #919191;
+   padding: 25px 0px;
+}
+/* footer section design ends from here */
